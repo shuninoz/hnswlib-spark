@@ -414,6 +414,7 @@ class BruteForceSimilarity(JavaEstimator, _KnnParams, JavaMLReadable, JavaMLWrit
     def setParams(
         self,
         identifierCol="id",
+        partitionCol=None,
         queryIdentifierCol=None,
         queryPartitionsCol=None,
         parallelism=None,
@@ -652,6 +653,7 @@ class HnswSimilarity(JavaEstimator, _HnswParams, JavaMLReadable, JavaMLWritable)
     def setParams(
         self,
         identifierCol="id",
+        partitionCol=None,
         queryIdentifierCol=None,
         queryPartitionsCol=None,
         parallelism=None,
